@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .button {
+            background-color: #33bae7;
+            border: none;
+            color: white;
+            padding: 10px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+            margin: 2px 1px;
+            cursor: pointer;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    String duplication
+    <div id="app">
+        Message <input placeholder="" v-model="word">How many<input placeholder="" v-model="times">
+        <button class="button" v-on:click="Repeat(word , times)">Do it!</button>
+        <br>
+        {{text}}
+
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
